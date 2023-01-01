@@ -35,10 +35,11 @@ def dmy_conversion(df, datetime_column):
     ___________________________________
     IMPORTS REQUIRED:
     import pandas as pd
+    from datetime import timedelta, datetime
     ___________________________________
     ARGUMENTS:
-                 df = 
-    datetime_column = 
+                 df = DataFrame
+    datetime_column = The 'column_name' of the column being used to store Date and Time data as datetime data type.
     """
     
     # Ensure datetime_column is dtype datetime64
