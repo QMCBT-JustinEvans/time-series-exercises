@@ -1,15 +1,44 @@
+import os
+import requests
+import numpy as np
 import pandas as pd
+
+# Working with Dates & Times
+from sklearn.model_selection import TimeSeriesSplit
+from datetime import timedelta, datetime
+
+import statsmodels.api as sm
+
+# to evaluate performance using rmse
+from sklearn.metrics import mean_squared_error
+from math import sqrt 
+
+# for tsa 
+import statsmodels.api as sm
+
+# holt's linear trend model. 
+from statsmodels.tsa.api import Holt
+
+# Plots, Graphs, & Visualization
+import seaborn as sns
+import matplotlib.pyplot as plt
+from matplotlib.ticker import StrMethodFormatter
+from matplotlib.dates import DateFormatter
 
 
 
 def dmy_conversion(df, datetime_column):
     """
+    DESCRIPTION:
     This function ensures the datetime_column given as an argument is converted to dtype of datetime64.
     Then adds Day, Month, and Year columns and sets the index to the datetime_column
-
-    Imports Required:
+    ___________________________________
+    IMPORTS REQUIRED:
     import pandas as pd
-
+    ___________________________________
+    ARGUMENTS:
+                 df = 
+    datetime_column = 
     """
     
     # Ensure datetime_column is dtype datetime64
